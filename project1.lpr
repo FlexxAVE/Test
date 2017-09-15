@@ -1,5 +1,6 @@
-program project1;
+program L7;
 uses SysUtils;
+const CRLF=#13#10;
 function Chomp(s: string): string;
 var
   Length_s: Integer;
@@ -16,5 +17,4 @@ begin
   writeLn('',Chomp(s));
   readln
 end.
-
 
