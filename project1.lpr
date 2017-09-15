@@ -15,6 +15,6 @@ var s:string;
 begin
   s:='simple string' +#13;
   writeLn('',Chomp(s));
-  readln
+  readln ;
 end.
 
