@@ -1,5 +1,13 @@
-program L7;
-uses  unit2;
+unit unit2;
+interface
+uses SysUtils;
+const CRLF=#13;
+function Chomp(s: string): string;
+implementation
+
+function Chomp(s: string): string;
+var
+  Length_s: Integer;
 begin
   result:='';
   Length_s:=Length(s);
@@ -9,10 +17,5 @@ begin
      result:=LeftStr(s,Length_s-length(CRLF));
   end;
 end;
-var s:string;
-begin
-  s:='simple string' +#13;
-  writeLn('',Chomp(s));
-  readln ;
 end.
 
